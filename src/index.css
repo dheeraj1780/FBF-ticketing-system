@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-canvas text-slate-200 antialiased;
+    background-image: radial-gradient(
+        circle at 15% 0%,
+        rgba(42, 214, 220, 0.08),
+        transparent 40%
+      ),
+      radial-gradient(circle at 85% 20%, rgba(167, 139, 250, 0.06), transparent 45%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgba(42, 214, 220, 0.35);
+  }
+
+  * {
+    scrollbar-color: #2a4256 transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #223349;
+    border-radius: 8px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: #2c4560;
+  }
+
+  :focus-visible {
+    outline: 2px solid #2ad6dc;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-2xl border border-canvas-border bg-canvas-panel/80 shadow-card backdrop-blur-sm;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-canvas-border bg-white/[0.03] px-2.5 py-1 text-xs font-medium text-slate-300;
+  }
+
+  .kicker {
+    @apply text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-400;
+  }
+
+  .prose-invert-custom p {
+    @apply text-slate-300 leading-relaxed;
+  }
+}
+
+.diagram-edge {
+  stroke-dasharray: 6 5;
+}
+
+.diagram-edge-animated {
+  animation: dashflow 1.4s linear infinite;
+}
+
+@keyframes dashflow {
+  to {
+    stroke-dashoffset: -22;
+  }
+}
