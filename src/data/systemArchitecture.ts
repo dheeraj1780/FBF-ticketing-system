@@ -20,7 +20,7 @@ export const systemArchitecture: ArchitectureGraph = {
       detail: ["Next.js + TypeScript + Tailwind", "TanStack Query, React Hook Form, Zod", "Reaches the platform via DNS/CDN"],
     },
     {
-      id: "admin-web", label: "FGF Admin Web", sublabel: "Next.js", icon: "monitor", col: 0, row: 1, kind: "client", group: "clients",
+      id: "admin-web", label: "Sports Admin Web", sublabel: "Next.js", icon: "monitor", col: 0, row: 1, kind: "client", group: "clients",
       description: "Back-office for competitions, matches, stadiums, pricing, quotas, reports, audit and user management.",
       detail: ["Role-based UI backed by Keycloak RBAC", "MFA for sensitive administrative roles"],
     },
@@ -37,8 +37,8 @@ export const systemArchitecture: ArchitectureGraph = {
     // Edge
     {
       id: "cdn", label: "DNS / CDN", icon: "cloud", col: 1, row: 0, kind: "edge", group: "edge",
-      description: "Domain, DNS and optional CDN in front of web clients. Controlled by FGF (Section 49).",
-      detail: ["FGF-owned domain and DNS", "Optional CDN (vendor behind adapter)"],
+      description: "Domain, DNS and optional CDN in front of web clients. Controlled by the Sports organization (Section 49).",
+      detail: ["Sports-owned domain and DNS", "Optional CDN (vendor behind adapter)"],
     },
     {
       id: "waf", label: "WAF / Reverse Proxy", sublabel: "Caddy / Nginx", icon: "shield", col: 1, row: 1, kind: "edge", group: "edge",

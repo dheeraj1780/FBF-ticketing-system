@@ -274,7 +274,7 @@ export default function PaymentFlow() {
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-center text-sm text-slate-400">This avoids locking FGF into one provider. Card, mobile-money and banking integrations all plug in here (FR-005).</p>
+            <p className="mt-4 text-center text-sm text-slate-400">This avoids locking the Sports organization into one provider. Card, mobile-money and banking integrations all plug in here (FR-005).</p>
           </div>
         </Card>
         <Card>

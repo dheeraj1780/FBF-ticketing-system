@@ -9,7 +9,7 @@ import {
 } from "@/data/finance";
 
 const fmt = (n: number) => n.toLocaleString("en-US");
-const gnf = (n: number) => `${(n / 1_000_000).toLocaleString("en-US", { maximumFractionDigits: 2 })}M GNF`;
+const money = (n: number) => `${(n / 1_000_000).toLocaleString("en-US", { maximumFractionDigits: 2 })}M`;
 
 const faults: { id: string; label: string; description: string; apply: (l: MockLedger) => MockLedger }[] = [
   { id: "none", label: "Clean ledger", description: "All records agree.", apply: (l) => l },
@@ -83,7 +83,7 @@ export default function FinancialReconciliation() {
     cancellations: fmt(ledger.cancelled),
     refunds: fmt(ledger.refunded),
     redeemed: fmt(ledger.redeemed),
-    revenue: gnf(ledger.grossRevenue - ledger.refundedAmount),
+    revenue: money(ledger.grossRevenue - ledger.refundedAmount),
   };
 
   return (
@@ -113,7 +113,7 @@ export default function FinancialReconciliation() {
             </div>
           ))}
         </div>
-        <p className="mt-2 text-xs text-slate-500">Illustrative ledger for one match. All figures are mock data.</p>
+        <p className="mt-2 text-xs text-slate-500">Illustrative ledger for one match. All figures are mock data; amounts in millions of local currency units.</p>
       </Section>
 
       <Section
@@ -135,7 +135,7 @@ export default function FinancialReconciliation() {
                 <div className="font-semibold text-white">{r.label}</div>
                 <div className="font-mono text-xs text-slate-400">{r.formula}</div>
                 <div className={clsx("mt-2 font-mono text-sm tabular-nums", r.ok ? "text-slate-200" : "text-rose-200")}>
-                  {r.money ? gnf(r.left) : fmt(r.left)} {r.id === "redeemed-bound" ? "≤" : r.ok ? "=" : "≠"} {r.money ? gnf(r.right) : fmt(r.right)}
+                  {r.money ? money(r.left) : fmt(r.left)} {r.id === "redeemed-bound" ? "≤" : r.ok ? "=" : "≠"} {r.money ? money(r.right) : fmt(r.right)}
                 </div>
               </div>
             </motion.div>
@@ -150,7 +150,7 @@ export default function FinancialReconciliation() {
         <div className="mb-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
           <Stat label="Tickets sold" value={fmt(ledger.sold)} hint={`of ${fmt(ledger.capacity)} capacity`} />
           <Stat label="Free / complimentary" value={fmt(ledger.complimentary)} tone="violet" />
-          <Stat label="Net revenue" value={gnf(ledger.grossRevenue - ledger.refundedAmount)} tone="lime" />
+          <Stat label="Net revenue" value={money(ledger.grossRevenue - ledger.refundedAmount)} tone="lime" />
           <Stat label="Spectators entered" value={fmt(ledger.redeemed)} hint={`${((ledger.redeemed / ledger.capacity) * 100).toFixed(0)}% occupancy`} tone="amber" />
         </div>
         <div className="grid gap-4 lg:grid-cols-3">

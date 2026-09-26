@@ -14,7 +14,7 @@ function Brand() {
         <Icon name="ticket" className="h-5 w-5" />
       </span>
       <span className="leading-tight">
-        <span className="block text-sm font-semibold text-white">FGF Ticketing</span>
+        <span className="block text-sm font-semibold text-white">Sports Ticketing</span>
         <span className="block text-[11px] text-slate-400">Architecture Explorer</span>
       </span>
     </Link>
@@ -128,7 +128,7 @@ export function Layout() {
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
-    document.title = current ? `${current.title} · FGF Ticketing Architecture Explorer` : "FGF Ticketing Architecture Explorer";
+    document.title = current ? `${current.title} · Sports Ticketing Architecture Explorer` : "Sports Ticketing Architecture Explorer";
   }, [current]);
 
   useEffect(() => {
@@ -150,7 +150,7 @@ export function Layout() {
           <SidebarNav />
         </div>
         <div className="border-t border-canvas-border px-5 py-4 text-[11px] leading-relaxed text-slate-500">
-          Source: <span className="text-slate-400">FGF Engineering Blueprint v1.0</span>
+          Source: <span className="text-slate-400">Sports Engineering Blueprint v1.0</span>
           <br />
           Proposed architecture · pre-implementation baseline
         </div>

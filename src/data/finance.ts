@@ -17,7 +17,7 @@ export const reportingMetrics = [
 
 // ---------------------------------------------------------------------------
 // Illustrative mock ledger for one match. Values are invented for demonstration.
-// Amounts in GNF (Guinean franc).
+// Amounts in local currency units.
 // ---------------------------------------------------------------------------
 
 export interface MockLedger {

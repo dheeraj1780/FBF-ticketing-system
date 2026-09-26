@@ -4,7 +4,7 @@ export const customerPurchaseFlow: ArchitectureGraph = {
   columns: 2,
   rows: 8,
   nodes: [
-    { id: "open-shop", label: "Customer opens FGF ticket shop", description: "Mobile-first, low-bandwidth friendly entry point.", icon: "smartphone", col: 0, row: 0 },
+    { id: "open-shop", label: "Customer opens Sports ticket shop", description: "Mobile-first, low-bandwidth friendly entry point.", icon: "smartphone", col: 0, row: 0 },
     { id: "browse", label: "Browse matches", description: "Customer browses upcoming competitions and matches.", icon: "search", col: 0, row: 1 },
     { id: "select-match", label: "Select match", description: "Customer selects a specific match to attend.", icon: "calendar", col: 0, row: 2 },
     { id: "select-category", label: "Select category / seat", description: "Clear price and seat information is shown for general admission or numbered seating.", icon: "ticket", col: 0, row: 3 },
@@ -53,7 +53,7 @@ export const matchDayUserFlow: ArchitectureGraph = {
   rows: 7,
   nodes: [
     { id: "arrive", label: "Customer arrives at stadium", description: "Physical arrival at the venue on match day.", icon: "map", col: 0, row: 0 },
-    { id: "open-ticket", label: "Open FGF ticket", description: "Customer opens the ticket wallet on their device.", icon: "smartphone", col: 0, row: 1 },
+    { id: "open-ticket", label: "Open Sports ticket", description: "Customer opens the ticket wallet on their device.", icon: "smartphone", col: 0, row: 1 },
     { id: "present-qr", label: "Present QR / dynamic credential", description: "The QR code is a credential carrier, not the security system itself.", icon: "qr", col: 0, row: 2 },
     { id: "gate-scanner", label: "Gate scanner", description: "Scanner reads the credential and initiates validation.", icon: "scan", col: 0, row: 3 },
     { id: "credential-valid", label: "Credential valid?", description: "Signature verification against the ticket's signed claims.", icon: "shield-check", col: 0, row: 4 },

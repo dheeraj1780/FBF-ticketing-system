@@ -3,9 +3,9 @@ export const executiveSummary = {
     "API-first, open-source-first, modular monolith, production-oriented",
   status: "Proposed Architecture / Pre-Implementation Baseline",
   version: "1.0",
-  source: "Fédération Guinéenne de Football (FGF) digital ticketing specification",
+  source: "Sports digital ticketing specification",
   intro:
-    "The FGF project is not merely a QR-code ticketing website. It is a complete stadium ticketing and access-control platform.",
+    "The Sports ticketing project is not merely a QR-code ticketing website. It is a complete stadium ticketing and access-control platform.",
   coverage: [
     "Competitions and matches",
     "Stadium / seat configuration",
@@ -48,7 +48,7 @@ export const executiveSummary = {
 
 export const businessObjective = {
   intro:
-    "FGF wants a federation-owned digital ticketing platform that progressively replaces manual/physical processes and addresses:",
+    "The Sports organization wants an organization-owned digital ticketing platform that progressively replaces manual/physical processes and addresses:",
   problems: [
     "Counterfeit tickets",
     "Ticket duplication",
@@ -61,7 +61,7 @@ export const businessObjective = {
     "Reconciliation errors",
   ],
   ownership:
-    "The source specification also requires the platform to remain owned and controllable by FGF, including source code/documentation under the contractual arrangement.",
+    "The source specification also requires the platform to remain owned and controllable by the Sports organization, including source code/documentation under the contractual arrangement.",
 };
 
 export const businessScope = [
@@ -69,7 +69,7 @@ export const businessScope = [
   "National competitions",
   "International matches",
   "Qualification matches",
-  "Other FGF-authorized sporting events",
+  "Other authorized sporting events",
   "Multiple stadiums",
   "Multiple ticket categories",
   "General admission",
@@ -89,7 +89,7 @@ export const corePrinciple = {
 
 export const finalPosition = {
   bullets: [
-    "Federation-controlled",
+    "Organization-controlled",
     "API-first",
     "Open-source-heavy",
     "Modular",

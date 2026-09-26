@@ -4,7 +4,7 @@ import type { AcceptanceTest, ChecklistGroup, RoadmapPhase } from "@/types";
 export const roadmapPhases: RoadmapPhase[] = [
   { id: "p0", phase: 0, title: "Discovery and architecture", items: ["SRS", "Architecture", "Threat model", "Domain model", "State machines", "ERD", "API contract", "ADRs"], outcome: "Reviewed specification baseline" },
   { id: "p1", phase: 1, title: "Platform foundation", items: ["Repositories", "CI/CD", "Database", "Identity", "API", "Web foundation", "Observability"], outcome: "Deployable skeleton with identity and telemetry" },
-  { id: "p2", phase: 2, title: "FGF administration", items: ["Competitions", "Matches", "Stadiums", "Zones", "Seats", "Gates", "Categories", "Prices", "Quotas"], outcome: "Configurable events and venues" },
+  { id: "p2", phase: 2, title: "Sports administration", items: ["Competitions", "Matches", "Stadiums", "Zones", "Seats", "Gates", "Categories", "Prices", "Quotas"], outcome: "Configurable events and venues" },
   { id: "p3", phase: 3, title: "Inventory", items: ["Seat reservation", "Holds", "Expiry", "Concurrency", "Quotas"], outcome: "Concurrency-safe inventory" },
   { id: "p4", phase: 4, title: "Checkout/payment", items: ["Orders", "Payment adapter", "Webhook handling", "Idempotency", "Reconciliation"], outcome: "Idempotent paid orders" },
   { id: "p5", phase: 5, title: "Ticket engine", items: ["Issuance", "Credential signing", "Ticket lifecycle", "Cancellation", "Refund"], outcome: "Signed tickets with full lifecycle" },
@@ -22,7 +22,7 @@ export const scopeTiers: { tier: string; tagline: string; items: string[] }[] = 
     tier: "V1 — Must-have",
     tagline: "Sell → Pay → Issue → Scan → Redeem → Report",
     items: [
-      "FGF admin", "Competitions", "Matches", "Stadiums", "Zones", "Seats", "Ticket categories",
+      "Sports admin", "Competitions", "Matches", "Stadiums", "Zones", "Seats", "Ticket categories",
       "Pricing", "Quotas", "Customer web", "Orders", "Payment integration", "Secure ticket issuance",
       "QR credential", "Scanner application", "Online redemption", "Audit", "Reports",
       "Financial reconciliation", "Monitoring", "Backups",
@@ -45,7 +45,7 @@ export const scopeTiers: { tier: string; tagline: string; items: string[] }[] = 
 
 /** Section 54 — End-to-end implementation flow (ordered chain with parallel branches). */
 export const implementationFlow: { id: string; label: string; after: string[] }[] = [
-  { id: "A", label: "FGF Requirements", after: [] },
+  { id: "A", label: "Sports Requirements", after: [] },
   { id: "B", label: "SRS", after: ["A"] },
   { id: "C", label: "Domain Model", after: ["B"] },
   { id: "D", label: "Threat Model", after: ["C"] },

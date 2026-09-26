@@ -107,7 +107,7 @@ export default function Overview() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-5xl"
           >
-            FGF Digital Ticketing &amp; <span className="bg-gradient-to-r from-brand-300 to-violet-300 bg-clip-text text-transparent">Stadium Access</span> Platform
+            Sports Digital Ticketing &amp; <span className="bg-gradient-to-r from-brand-300 to-violet-300 bg-clip-text text-transparent">Stadium Access</span> Platform
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -115,7 +115,7 @@ export default function Overview() {
             transition={{ delay: 0.08 }}
             className="mt-5 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg"
           >
-            {executiveSummary.intro} An interactive guide to the engineering blueprint for the Fédération Guinéenne de Football —
+            {executiveSummary.intro} An interactive guide to the Sports engineering blueprint —
             from match creation to gate redemption, reconciliation and audit.
           </motion.p>
           <p className="mt-3 text-sm text-slate-500">
@@ -226,7 +226,7 @@ export default function Overview() {
         </Card>
         <Card>
           <div className="kicker mb-2">§55 Final technical position</div>
-          <p className="mb-4 text-sm text-slate-400">This architecture gives FGF a platform that is:</p>
+          <p className="mb-4 text-sm text-slate-400">This architecture gives the Sports organization a platform that is:</p>
           <BulletList items={finalPosition.bullets} tone="lime" columns />
         </Card>
       </div>

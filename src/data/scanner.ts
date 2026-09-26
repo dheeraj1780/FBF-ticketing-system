@@ -138,7 +138,7 @@ export interface SimTicket {
   signatureValid: boolean;
 }
 
-export const simMatch = "Guinea vs Team B — Qualifier";
+export const simMatch = "Home Team vs Away Team — Qualifier";
 
 export const simTickets: SimTicket[] = [
   { id: "TKT-8F21-A12", holder: "Customer #1042", match: simMatch, zone: "Tribune Nord", gate: "Gate A", category: "Tribune", status: "VALID", signatureValid: true },

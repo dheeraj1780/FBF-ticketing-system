@@ -212,7 +212,7 @@ export default function SecurityArchitecture() {
         </Card>
         <Card>
           <div className="kicker mb-3">§49 Ownership / vendor independence</div>
-          <p className="mb-3 text-sm text-slate-400">FGF should control:</p>
+          <p className="mb-3 text-sm text-slate-400">The Sports organization should control:</p>
           <BulletList items={ownership.controls} columns tone="amber" />
           <div className="mt-4 flex items-start gap-2 rounded-lg border border-amber-400/30 bg-amber-400/[0.07] p-3 text-sm text-amber-100">
             <Icon name="key" className="mt-0.5 h-4 w-4 shrink-0" />

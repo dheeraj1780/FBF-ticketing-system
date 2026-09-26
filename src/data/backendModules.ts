@@ -126,7 +126,7 @@ export interface TreeNode {
 }
 
 export const repositoryStructure: TreeNode = {
-  name: "fgf-ticketing/",
+  name: "sports-ticketing/",
   children: [
     { name: "apps/", children: [{ name: "api/" }, { name: "worker/" }, { name: "web/" }, { name: "scanner/" }] },
     {

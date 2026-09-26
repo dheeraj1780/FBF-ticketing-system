@@ -1,9 +1,9 @@
 {
-  "name": "fgf-ticketing-architecture-explorer",
+  "name": "sports-ticketing-architecture-explorer",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Interactive architecture explorer for the FGF Digital Ticketing & Stadium Access Platform engineering blueprint.",
+  "description": "Interactive architecture explorer for the Sports Digital Ticketing & Stadium Access Platform engineering blueprint.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

@@ -63,7 +63,7 @@ export const transferSequence: SequenceDiagramData = {
   title: "Ticket transfer",
   participants: [
     { id: "A", label: "Current Holder", icon: "user" },
-    { id: "API", label: "FGF API", icon: "server" },
+    { id: "API", label: "Sports API", icon: "server" },
     { id: "B", label: "New Holder", icon: "user-check" },
     { id: "DB", label: "Database", icon: "database" },
   ],

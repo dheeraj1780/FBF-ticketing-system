@@ -5,7 +5,7 @@ export const paymentSequence: SequenceDiagramData = {
   title: "Payment → ticket issuance",
   participants: [
     { id: "U", label: "Customer", icon: "user" },
-    { id: "API", label: "FGF API", icon: "server" },
+    { id: "API", label: "Sports API", icon: "server" },
     { id: "DB", label: "PostgreSQL", icon: "database" },
     { id: "PG", label: "Payment Gateway", icon: "credit-card" },
   ],
@@ -14,7 +14,7 @@ export const paymentSequence: SequenceDiagramData = {
     { from: "API", to: "DB", label: "Reserve inventory", detail: "SELECT seat FOR UPDATE → check availability → create hold → commit." },
     { from: "DB", to: "API", label: "Reservation created", kind: "return" },
     { from: "API", to: "U", label: "Payment session", kind: "return" },
-    { from: "U", to: "PG", label: "Pay", detail: "Hosted/tokenized payment — FGF avoids storing card data." },
+    { from: "U", to: "PG", label: "Pay", detail: "Hosted/tokenized payment — the Sports organization avoids storing card data." },
     { from: "PG", to: "API", label: "Webhook payment.success", kind: "async", detail: "May be delivered multiple times. Must be idempotent (AT-003)." },
     { from: "API", to: "DB", label: "Lock payment/order" },
     { from: "API", to: "DB", label: "Verify idempotency", detail: "Persisted key + stored result: a repeated webhook returns the original outcome." },

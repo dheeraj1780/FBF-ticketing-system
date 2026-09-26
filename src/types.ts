@@ -1,5 +1,5 @@
 // Shared type definitions for diagrams and domain content used across the explorer.
-// All content is derived from docs/FGF_Digital_Ticketing_Engineering_Blueprint_v1.0.md
+// All content is derived from the engineering blueprint in docs/
 
 export type IconName =
   | "shield"

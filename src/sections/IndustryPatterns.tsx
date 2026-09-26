@@ -28,7 +28,7 @@ export default function IndustryPatterns() {
         title="Industry Patterns"
         icon="trending-up"
         blueprint="§12–15, §56"
-        description="Proven patterns from Ticketmaster, AXS, UEFA, pretix and Eventyay, used as references rather than requirements. The FGF-specific requirements remain authoritative."
+        description="Proven patterns from Ticketmaster, AXS, UEFA, pretix and Eventyay, used as references rather than requirements. The Sports-specific requirements remain authoritative."
       />
 
       <Section title="Benchmarks">
@@ -41,7 +41,7 @@ export default function IndustryPatterns() {
               <p className="mt-3 text-sm leading-relaxed text-slate-300">{current.summary}</p>
             </div>
             <div className="panel p-5">
-              <div className="kicker mb-3">Design lessons for FGF</div>
+              <div className="kicker mb-3">Design lessons for the Sports organization</div>
               <ul className="space-y-2">
                 {current.lessons.map((l, i) => {
                   const negative = l.startsWith("Do not");
@@ -60,7 +60,7 @@ export default function IndustryPatterns() {
 
       <Section
         title="Industry pattern comparison"
-        description="§15 — what FGF adopts, and what it deliberately rejects initially."
+        description="§15 — what the Sports organization adopts, and what it deliberately rejects initially."
         actions={
           <Tabs
             label="Decision filter"
@@ -81,7 +81,7 @@ export default function IndustryPatterns() {
               <tr className="border-b border-canvas-border text-left text-xs text-slate-400">
                 <th scope="col" className="px-4 py-2.5 font-semibold">Pattern</th>
                 <th scope="col" className="px-4 py-2.5 font-semibold">Industry examples</th>
-                <th scope="col" className="px-4 py-2.5 font-semibold">FGF decision</th>
+                <th scope="col" className="px-4 py-2.5 font-semibold">Decision</th>
               </tr>
             </thead>
             <tbody>
@@ -113,7 +113,7 @@ export default function IndustryPatterns() {
       </Section>
 
       <Callout tone="amber" icon="alert-triangle" title="Reference, not replica">
-        Do not copy proprietary implementation details. The FGF-specific requirements remain authoritative, and external systems are used only to
+        Do not copy proprietary implementation details. The Sports-specific requirements remain authoritative, and external systems are used only to
         identify proven architectural patterns.
       </Callout>
     </div>

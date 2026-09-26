@@ -101,7 +101,7 @@ export default function FraudAbuse() {
         description="The platform exists to stop counterfeit, duplicated and diverted tickets. Fraud rules produce recorded, routable signals. They inform human decisions rather than blocking users automatically."
       />
 
-      <Section title="Threats → controls" description="The nine problems FGF must address (§1.1), mapped to the architectural controls that counter them.">
+      <Section title="Threats → controls" description="The nine problems the Sports organization must address (§1.1), mapped to the architectural controls that counter them.">
         <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
           <ul className="grid gap-2 sm:grid-cols-2" role="listbox" aria-label="Threats">
             {threatControls.map((t) => (

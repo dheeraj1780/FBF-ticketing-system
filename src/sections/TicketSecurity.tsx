@@ -76,11 +76,11 @@ function CredentialDemo() {
         <div className="rounded-[1.8rem] bg-canvas px-4 pb-5 pt-3">
           <div className="mx-auto mb-3 h-1.5 w-16 rounded-full bg-slate-800" />
           <div className="flex items-center justify-between text-[11px] text-slate-400">
-            <span className="font-semibold text-slate-200">FGF Tickets</span>
+            <span className="font-semibold text-slate-200">Sports Tickets</span>
             <span>{mode === "dynamic" ? "Mode B · dynamic" : "Mode A · static"}</span>
           </div>
           <div className="mt-3 rounded-2xl border border-canvas-border bg-canvas-panel p-3">
-            <div className="text-[11px] text-slate-400">Guinea vs Team B · Qualifier</div>
+            <div className="text-[11px] text-slate-400">Home Team vs Away Team · Qualifier</div>
             <div className="text-sm font-semibold text-white">Tribune Nord · Gate A</div>
             <div className="relative mt-3 grid place-items-center">
               <AnimatePresence mode="popLayout">
@@ -202,7 +202,7 @@ function CredentialDemo() {
           <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Canonical claims (illustrative)</div>
           <pre className="font-mono text-[12px] leading-relaxed text-slate-300">{`{
   "ticket_id": "${TICKET_ID}",
-  "event": "match:guinea-vs-team-b",
+  "event": "match:home-vs-away",
   "category": "Tribune",
   "zone": "Tribune Nord",
   "gate": "Gate A",${mode === "dynamic" ? `\n  "display_token": "${token}",\n  "valid_for_s": ${ROTATE_S},` : ""}

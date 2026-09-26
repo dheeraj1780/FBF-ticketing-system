@@ -8,7 +8,7 @@ export const functionalRequirements: Requirement[] = [
     summary: "Authorized users can create, modify, publish and manage competitions.",
     details: ["Create, modify, publish and manage competitions."],
     relatedComponents: ["FastAPI API", "PostgreSQL", "backend/competitions"],
-    relatedPhases: ["Phase 2 — FGF administration"],
+    relatedPhases: ["Phase 2 — Sports administration"],
     relatedSections: ["Business Architecture", "Backend Modules"],
   },
   {
@@ -22,7 +22,7 @@ export const functionalRequirements: Requirement[] = [
       "Buyer limits", "Special conditions",
     ],
     relatedComponents: ["FastAPI API", "PostgreSQL", "backend/matches"],
-    relatedPhases: ["Phase 2 — FGF administration"],
+    relatedPhases: ["Phase 2 — Sports administration"],
     relatedSections: ["Business Architecture", "Stadium Model"],
   },
   {
@@ -36,7 +36,7 @@ export const functionalRequirements: Requirement[] = [
       "Support both general admission and assigned seating",
     ],
     relatedComponents: ["PostgreSQL", "backend/stadiums"],
-    relatedPhases: ["Phase 2 — FGF administration"],
+    relatedPhases: ["Phase 2 — Sports administration"],
     relatedSections: ["Stadium Model", "Data Model"],
   },
   {
@@ -112,7 +112,7 @@ export const functionalRequirements: Requirement[] = [
     title: "User and Access Management",
     summary: "Configurable roles including super admin, ticketing/financial admin, competition/stadium manager, gate supervisor/agent, POS operator, partner and auditor. MFA for sensitive roles.",
     details: [
-      "FGF super administrator", "Ticketing administrator", "Financial administrator",
+      "Sports super administrator", "Ticketing administrator", "Financial administrator",
       "Competition manager", "Stadium manager", "Gate supervisor", "Gate agent",
       "Point-of-sale operator", "Partner/operator", "Auditor",
       "Sensitive administrative roles shall support MFA",

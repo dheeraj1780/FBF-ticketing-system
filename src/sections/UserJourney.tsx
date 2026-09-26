@@ -39,7 +39,7 @@ export default function UserJourney() {
 
       {tab === "purchase" ? (
         <>
-          <Section title="Customer purchase flow" description="From opening the FGF ticket shop to receiving a secure ticket. Tickets are never issued before payment is confirmed.">
+          <Section title="Customer purchase flow" description="From opening the Sports ticket shop to receiving a secure ticket. Tickets are never issued before payment is confirmed.">
             <NodeGraph
               key="purchase"
               title="Customer purchase flow"

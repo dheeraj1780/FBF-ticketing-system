@@ -1,7 +1,7 @@
 import type { Stakeholder } from "@/types";
 
 export const stakeholders: Stakeholder[] = [
-  { role: "FGF Executive", needs: "Ownership, transparency, revenue, strategic control", icon: "building" },
+  { role: "Sports Executive", needs: "Ownership, transparency, revenue, strategic control", icon: "building" },
   { role: "Ticketing Administration", needs: "Match/ticket configuration and sales", icon: "clipboard" },
   { role: "Competition Manager", needs: "Match lifecycle", icon: "trophy" },
   { role: "Stadium Manager", needs: "Zones, gates, capacity, access", icon: "stadium" },

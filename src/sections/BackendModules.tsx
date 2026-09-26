@@ -259,7 +259,7 @@ export default function BackendModules() {
             </Card>
             <Card>
               <div className="kicker mb-3">Idempotency keys (§33)</div>
-              <pre className="mb-3 overflow-x-auto rounded-lg border border-canvas-border bg-canvas p-3 font-mono text-xs text-lime-200">Idempotency-Key: 01JFGF...</pre>
+              <pre className="mb-3 overflow-x-auto rounded-lg border border-canvas-border bg-canvas p-3 font-mono text-xs text-lime-200">Idempotency-Key: 01JSPT...</pre>
               <BulletList items={idempotentOperations} />
               <p className="mt-3 text-xs text-slate-500">The database persists the key and the final response/result.</p>
             </Card>
