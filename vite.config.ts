@@ -2,6 +2,9 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// Leading dot allows any subdomain, so new ngrok URLs work without edits.
+const tunnelHosts = [".ngrok-free.dev", ".ngrok-free.app", ".ngrok.app", ".ngrok.io"];
+
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -23,5 +26,10 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173,
+    allowedHosts: tunnelHosts,
+  },
+  preview: {
+    host: true,
+    allowedHosts: tunnelHosts,
   },
 });
